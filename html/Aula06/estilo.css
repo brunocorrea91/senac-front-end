@@ -1,0 +1,59 @@
+/*Comentário no CSS*/
+body{
+	background-color: lightblue;
+	
+}
+header{
+	background-color: lightblue;
+	color: white;
+	font-family: Verdana;
+	margin: auto;
+	height: 100px;
+	text-align: center;
+}
+header h1{
+	padding: 40px;
+}
+nav{
+	background-color: gray;
+	border: 4px double lightblue;
+	color: lightblue;
+	text-align: center;
+	font-family: Arial Black;
+}
+nav ul li{
+	list-style-type: none;
+	display: inline;
+	padding: 0.5%;	
+}
+nav a{
+	text-decoration: none;
+	color: white;
+}
+
+.main{
+	height: auto;
+	margin: auto;
+	background-color: white;
+}
+.artigo{
+	margin-left: 50px;
+	margin-right: 30px;
+	margin-top: 10px;
+	padding-top: 10px;
+	text-align: justify;
+	text-indent: 2rem;
+}
+.figura{
+	margin-left: 320px;
+}
+.sepia{
+	width: 50%;
+	height: 50%;
+	border-radius: 30%;
+	border: 3px solid black;
+	filter: sepia(80%);
+	-webkit-box-reflect: left;
+	margin-left: auto;
+display: block;	
+}
