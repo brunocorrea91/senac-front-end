@@ -46,14 +46,36 @@ nav a{
 }
 .figura{
 	margin-left: 320px;
+
 }
-.sepia{
+.figura img{
 	width: 50%;
 	height: 50%;
 	border-radius: 30%;
 	border: 3px solid black;
+	margin-left: auto;
+	display: block;	
+}
+.figura figcaption{
+	margin-left: 53%
+}
+.sepia{
 	filter: sepia(80%);
 	-webkit-box-reflect: left;
-	margin-left: auto;
-display: block;	
+}
+.desfocado{
+	filter: blur(3px);
+}
+.sombra{
+	filter: drop-shadow(5px 15px 6px green);
+}
+.rodape{
+	height: 60px;
+	margin: auto;
+	background-color: gray;
+	text-align: center;
+	color: white;
+}
+.rodape p{
+	padding-top: 4px;
 }

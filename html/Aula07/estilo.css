@@ -1,0 +1,41 @@
+body{
+	background-color: GhostWhite;
+	}
+div{
+	padding: 15px;
+	float: left;
+	border-color: black;
+	border: 1px solid black;
+}
+.exemplo{
+	height: 400px;
+	margin: auto;
+	background-color: orange;
+	border: 3px solid Indigo;
+	
+}
+.div1{
+	background-color: white;
+}
+.div2{
+	background-color: blue;
+}
+.div3{
+	background-color: yellow;
+}
+.texto{
+	border: 3px solid Indigo;
+	height: 400px;
+	width: 490px;
+	text-align: justify;
+	text-indent: 2rem;
+}
+img{
+	width: 170px;
+	height: auto;
+	float: right;
+	margin-left: 15px;
+	background-color: orange;
+	padding: 10px;
+	
+}
