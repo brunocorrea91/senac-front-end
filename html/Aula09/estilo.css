@@ -38,3 +38,28 @@ nav{
 	background-color: indigo;
 	transition: 0.5s;
 }
+section{
+	border: 1px solid purple;
+	width:	50%;
+	margin: auto;
+}
+.tbPreco{
+	width: 100%;
+	border-collapse: collapse; /*Aplica formatação na primeira linha*/
+	text-align: center;
+}
+.tbPreco tr, td, th{
+	padding: 8px;
+	border: 1px solid indigo;
+}
+.tbPreco th{
+	color: darkblue;
+	font-size: 20px;
+}
+
+
+.tbNotas{
+	width: 100%;
+	border-collapse: separate; /*Aplica formatação na primeira linha*/
+	text-align: center;
+}
