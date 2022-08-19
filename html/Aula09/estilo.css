@@ -3,8 +3,8 @@ body{
 	font-family: verdana;
 }
 header{
-	background-image: linear-gradient(white,darkgray,black,olive);
-	padding: 20px;
+	background-image: linear-gradient(white,darkgray,black,olive,white);
+	padding: 10px;
 	text-align: center;
 	color: white;
 	width: 100%;
@@ -44,6 +44,7 @@ section{
 	margin: auto;
 }
 .tbPreco{
+	font-family: arial;
 	width: 100%;
 	border-collapse: collapse; /*Aplica formatação na primeira linha*/
 	text-align: center;
@@ -53,13 +54,67 @@ section{
 	border: 1px solid indigo;
 }
 .tbPreco th{
-	color: darkblue;
+	background-image: linear-gradient(white,darkgray,black,olive,white);
+	color: white;
 	font-size: 20px;
 }
 
-
+.divNotas{
+	overflow-x: auto;
+}
 .tbNotas{
+	font-family: arial;
 	width: 100%;
-	border-collapse: separate; /*Aplica formatação na primeira linha*/
+	border-collapse: collapse; /*Aplica formatação na primeira linha*/
 	text-align: center;
+}
+.tbNotas td, th{
+	border: 1px solid indigo;
+	padding: 8px;
+}
+.tbNotas tr:nth-child(even){
+	background-color: gray;
+}
+.tbNotas tr:hover{
+	background-color: lightblue;
+}
+.tbNotas th{
+	padding-top: 12px;
+	padding-bottom: 12px;
+	background-image: linear-gradient(white,darkgray,black,olive,white);
+	color: white;
+}
+/*galeria*/
+
+.galeria{
+	padding-top: 13%;
+	width: 90%;
+	margin: auto;
+	padding-top: 10px;
+	float: center;
+	
+}
+img{
+	width: 400px;
+	height: auto;
+	border-radius: 20%
+}
+.img_um{
+	float: left;
+}
+.img_dois{
+	float: left;
+	padding-left: 10px;
+}
+.img_tres{
+	float: left;
+	padding-left: 10px;
+}
+.img_quatro{
+	float: left;
+	padding-left: 10px;
+}
+.galeria img:hover{
+	border-radius: 20%;
+	opacity: 0.5;
 }
