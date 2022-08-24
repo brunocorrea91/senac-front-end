@@ -1,0 +1,106 @@
+body{
+	background-color: lightgray;
+	font-family: verdana;
+}
+.container{
+	width: 95%;
+	height: 80%;
+	margin: auto;
+}
+header{
+	width: 100%;
+	height: 90px;
+	background-image: linear-gradient( lightblue, blue);
+	text-align: center;
+	color: white;
+	padding-top: 10px;
+}
+nav{
+	background-color: #92a8d1;
+}
+nav a{
+	transition: 400ms;
+}
+nav a:hover{
+	color: orange;
+	font-size: 20px;
+}
+.horizontal{
+	width: 100%;
+	height: 50px;
+	border: solid 1px black;
+	text-align: center;
+	float: left;
+}
+.horizontal ul li{
+	display: inline;
+	padding: 10%;
+}
+.vertical{
+	width: 20%;
+	height: 500px;
+	float: left;
+}
+.vertical ul li{
+	list-style-type: none;
+}
+.vertical li{
+	padding-top: 5%;
+}
+.imagem{
+	width: 50%;
+	height: 500px;
+	float: left;
+	background-color: tomato;
+}
+.imagem img{
+	width: 50%;
+	height: 50%;
+}
+section{
+	width: 80%;
+	height: 500px;
+	float: right;
+	background-color: aqua;
+	overflow: auto;
+}
+.texto{
+	float: left;
+	width: 50%;
+	height: 100%;
+	overflow: auto;
+}
+.texto h1{
+	text-align: center;
+	text-shadow: 5px 5px 10px blue;
+}
+.texto p{
+	text-align: justify;
+	padding-right: 3%;
+}
+footer{
+	width: 100%;
+	height: 50px;
+	background-image: linear-gradient(blue, lightblue);
+	text-align: center;
+	color: white;
+	float: left;
+}
+
+@media only screen and (max-width: 600px){
+	.imagem, .texto{
+		width: 100%;
+		height: auto;
+		float: none;
+	}
+	nav a:hover{
+		color: orange;
+		font-size: 1rem;
+	}
+	section{
+		width: 100%;
+	}
+	.vertical{
+		display: none;
+	}
+}
