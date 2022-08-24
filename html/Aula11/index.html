@@ -8,6 +8,7 @@
 			<meta name="author" content="Prof. Jair Ferraz">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<link rel="icon" type="image/icon" href="./imagens/favicon.png"/>
+			<link rel="stylesheet" href="estilo.css"/>
 			<!-- Estilo da página -->
 		</head>
 
@@ -109,6 +110,19 @@
 							<option value="burger">Burger</option>
 							<option value="dog">Cachorro-quente</option>
 						</select>
+					<label for="restAlimentar">Restrição Alimentar?</label>
+					<input list="restAlimentar" name="restAlimentar"/>
+					<datalist id="restAlimentar">
+						<option value="Intolerância Lactose"/>
+						<option value="Glúten"/>
+						<option value="Ovo"/>
+						<option value="Camarão"/>
+						<option value="Amendoim"/>
+
+					</datalist>
+					<br/><br/>
+					<input type="reset" value="Limpar"/>
+					<input type="submit" value="Enviar"/>
 					</form>
 		</body>
 </html>
