@@ -1,0 +1,37 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: verdana;
+	margin: 0;
+	background-color: wheat;
+}
+header{
+	padding: 60px;
+	text-align: center;
+	background-color: olive;
+}
+nav{
+	text-align: center;
+	background-color: #92A8D1;
+	width: 100%;
+}
+nav ul{
+	margin: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+nav li{
+	list-style-type: none;
+	display: inline;
+	padding: 10%;
+}
+nav a{
+	color: indigo;
+	text-decoration: none;
+	transition: 400ms;
+}
+nav a:hover{
+	color: orange;
+	font-size: 20px;
+}
