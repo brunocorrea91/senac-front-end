@@ -4,16 +4,10 @@
 body{
 	font-family: verdana;
 	margin: 0;
-	background-color: wheat;
-}
-header{
-	padding: 60px;
-	text-align: center;
-	background-color: olive;
 }
 nav{
 	text-align: center;
-	background-color: #92A8D1;
+	background-color: #333;
 	width: 100%;
 }
 nav ul{
@@ -27,11 +21,51 @@ nav li{
 	padding: 10%;
 }
 nav a{
-	color: indigo;
+	color: wheat;
 	text-decoration: none;
 	transition: 400ms;
 }
 nav a:hover{
 	color: orange;
 	font-size: 20px;
+}
+header{
+	padding: 40px;
+	text-align: center;
+	background-color: #1abc9c;
+	color: white;
+}
+.container{
+	display: flex;
+	flex-wrap: wrap;
+}
+.esquerda{
+	flex: 30%;
+	background-color: #f1f1f1;
+	padding: 20px;
+}
+.conteudo{
+	flex: 70%;
+	background-color: white;
+	padding: 20px;
+}
+.imgFake{
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(48,182,104,0.5998774509803921) 35%, rgba(0,255,128,1) 100%);
+	width: 100%;
+	padding: 20px;
+	color: white;
+}
+footer{
+	padding: 20px;
+	background-color: #333;
+	text-align: center;
+	color: white;
+	font-size: 1.5rem;
+}
+@media screen and (max-width: 600px){
+	nav li{
+		display: block;
+		padding: 0;
+	}
 }

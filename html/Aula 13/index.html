@@ -1,92 +1,67 @@
 <!DOCTYPE html>
 <html>
-		<head>
-			<meta charset="UTF-8">
-			<title>UC12-Layout</title>
-			<meta name="description" content="UC12- Aula13">
-			<meta name="keywords" content="HTML,CSS,XML,JavaScript">
-			<meta name="author" content="Prof. Jair Ferraz">
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<link rel="icon" type="image/icon" href="./imagens/favicon.png"/>
-			<link rel="stylesheet" href="estilo.css"/>
-			<!-- Estilo da página -->
-		</head>
-		<body>
-			<header>
-				<h1> Layout</h1>
-			</header>
-			<nav> 
-				<ul>
-					<li><a href="#">Link 1</a> </li>
-					<li><a href="#">Link 2</a> </li>
-					<li><a href="#">Link 3</a> </li>
-				</ul>
-			</nav>
-			<div class="container">
-				<div class="esquerda">
-					<h2>Sobre</h2>
-					<h5>Descrição</h5>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-					Aenean commodo ligula eget dolor. Aenean massa. 
-					Cum sociis natoque penatibus et magnis dis parturient montes, 
-					nascetur ridiculus mus. Donec quam felis, ultricies nec,
-					pellentesque eu, pretium quis, sem.  </p>
-					<h5>História</h5>
-					<p>Nulla consequat massa 
-					quis enim. Donec pede justo, fringilla vel, aliquet nec, 
-					vulputate eget, arcu.</p>
-				<div class="imgFake" style="height: 200px">
-					Imagem aqui
-				</div>
-				<br/>
-				<div class="imgFake" style="height: 200px">
-					Imagem aqui
-				</div>
-				<br/>
-				<div class="imgFake" style="height: 200px">
-					Imagem aqui
-				</div>
-				<br/>
-				</div>
-				<div class="conteudo">
-					<h2>Aula 13-Layout</h2>
-					<h5>
-						<script><!--código Javascript para pegar data-->
-							date = new Date().toLocaleDateString();
-							document.write(date);
-						</script>
-					</h5>
-					<div class="imgFake" style="height: 200px">
-						Imagem aqui
-					</div>
-					<p>Aenean commodo ligula eget dolor.</p>
-					<p>
-						Aenean massa. 
-					Cum sociis natoque penatibus et magnis dis parturient montes, 
-					nascetur ridiculus mus. Donec quam felis, ultricies nec,
-					pellentesque eu, pretium quis, sem.
-					</p>
-					<picture>
-					<source media="(min-width: 600px)" srcset="./imagens/imgMedia.jpg" width="600px"/>
-					<source media="(min-width: 465px)" srcset="./imagens/imgPequena.jpg"/>
-					
-						<img src="./imagens/caminho.jpg" alt="Caminho entre árvores" style="max-width:100%; height: auto;"/>
-					
-					</picture>
-					<br/>
-					<h2>Subtítulo</h2>
-					<h5>24/08/2022</h5>
-					<p>Mussunzinho</p>
-					<p>Aenean massa. 
-					Cum sociis natoque penatibus et magnis dis parturient montes, 
-					nascetur ridiculus mus. Donec quam felis, ultricies nec,
-					pellentesque eu, pretium quis, sem.</p>
-				</div>
-			
+	<head>
+		<meta charset="UTF-8">
+		<title>UC12-Layout</title>
+		<meta name="description" content="UC12- Aula 13">
+		<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+		<meta name="author" content="Prof. Jair Ferraz">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/icon" href="./imagens/favicon.png"/>
+		<link rel="stylesheet" href="estilo.css"/>
+	</head>
+	<body>
+		<header>
+			<h1>UC12 - Layout</h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="#">Link 1</a></li>
+				<li><a href="#">Link 2</a></li>
+				<li><a href="#">Link 3</a></li>
+			</ul>
+		</nav>
+		<div class="container">
+			<div class="esquerda">
+				<h2>Sobre:</h2>
+				<h5>Descrição</h5>
+				<p>
+					Mussum Ipsum, cacilds vidis litro abertis. Paisis, filhis, espiritis santis.Atirei o pau no gatis, per gatis num morreus.Copo furadis é disculpa de bebadis, arcu quam euismod magna.Manduma pindureta quium dia nois paga.
+				</p>
+				<h5>Histórico</h5>
+				<p>
+					Mussum Ipsum, cacilds vidis litro abertis.
+				</p>
+				<div class="imgFake" style="height: 200px">Imagem</div>
+				<div class="imgFake" style="height: 200px">Imagem</div>
+				<div class="imgFake" style="height: 200px">Imagem</div>
 			</div>
-			<div class="footer">
-				<h5>&copy: Todos os direitos reservados.</h5>
-				
+			<div class="conteudo">
+				<h2>UC12 - Aula 13</h2>
+				<h5>25/08/2022</h5>
+				<div class="imgFake" style="height: 200px">Imagem</div>
+				<p>
+					Mussum Ipsum ...
+				</p>
+				<p>
+					Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi.Manduma pindureta quium dia nois paga.Mé faiz elementum girarzis, nisi eros vermeio.Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus.
+				</p>
+				<picture>
+					<source media="(min-width: 600px)" srcset="./imagens/imgMedia.jpg" width="600px" />
+					<source media="(min-width: 465px)" srcset="./imagens/imgPequena.jpg" />
+					<img src="./imagens/caminho.jpg" alt="Caminho entre árvores" style="max-width: 100%; height: auto;" />
+				</picture>
+				<br/>
+				<h2>Subtitulo...</h2>
+				<h5>24/08/2022</h5>
+				<p>Mussunzinho</p>
+				<p>
+					Não sou faixa preta cumpadi, sou preto inteiris, inteiris.Si num tem leite então bota uma pinga aí cumpadi!Atirei o pau no gatis, per gatis num morreus.Cevadis im ampola pa arma uma pindureta.
+				</p>
 			</div>
-		</body>
-</html>		
+		</div>
+		<footer>
+			<h2>&copy;Todos os direitos reservados.</h2>
+		</footer>
+	</body>
+</html>
