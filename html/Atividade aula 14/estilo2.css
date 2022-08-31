@@ -1,0 +1,38 @@
+*{
+	box-sizing: border-box;
+}
+
+header{
+	padding-top: 70px;
+	font-size: 20px;
+	background-color: white;
+	color: black;
+}
+
+body{
+	font-family: verdana;
+	margin: 0;
+}
+.col{
+	width: 30%;
+	float: left;
+	margin: 10px;
+	text-align: justify;
+	padding-top: 70px;
+}
+
+.imagem{
+	display: block;
+	padding-left: 10px;
+}
+
+.imagem img{
+	width: 20%;
+	padding-top: 50px;
+	float: left;
+}
+.imagem figcaption{
+	float: left;
+	
+}
+

@@ -1,4 +1,4 @@
 body{
-	background-image: conic-gradient(red, white, lightblue, green, blue, white);
+	background-image: linear-gradient(red, white, lightblue, green, blue, white);
 	
 }
