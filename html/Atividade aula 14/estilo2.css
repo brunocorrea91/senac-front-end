@@ -1,44 +1,64 @@
 *{
 	box-sizing: border-box;
 }
-
+body{
+	font-family: verdana;
+	margin: auto;
+	padding: 5%;
+	
+	
+}
 header{
-	padding-top: 70px;
+	
 	font-size: 20px;
 	background-color: white;
 	color: black;
+	padding-left: 30px;
+	border: 1px solid black;
+	
 }
 
-body{
-	font-family: verdana;
-	margin: 0;
+.heading{
+	width: 100%;
+	display: flex;
+	border: 1px solid black;
+}
+.rows{
+	width: 100%;
+	display: flex;
+	
 }
 .col{
 	width: 30%;
 	float: left;
-	margin: 10px;
+	margin: auto;
 	text-align: justify;
-	padding-top: 70px;
-}
-
-.imagem{
-	display: block;
-	padding-left: 10px;
-	width: 64%;
-}
-
-.imagem img{
-	width: 20%;
-	padding-top: 50px;
-	float: left;
-}
-.imagem figcaption{
-	float: left;
 	
 }
 
+.imagem{
+	padding-top: 70px;
+	flex: 60%;
+	padding-left: 70px;
+	border: 1px solid black;
+	} 	
+
+.imagem img{
+	width: 30%;
+}
+
 .Endereco{
-	display: block;
-	width: 36%;
-	float: right;
+	padding-top: 30px;
+	padding-left: 70px;
+	padding-bottom: 30px;
+	flex: 30%;
+	
+	border: 1px solid black;
+}
+.Endereco img{
+	width: 250px;
+}
+.Endereco a{
+	
+	
 }
