@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>UC12-JavaScript</title>
+		<meta name="description" content="UC12- Aula 15">
+		<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+		<meta name="author" content="Prof. Jair Ferraz">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/icon" href="./imagens/favicon.png"/>
+		<script type="text/javascript" src="./script.js"></script>
+	</head>
+	<body onload="minhaFuncaoExterna()">
+		<h1>Olá Mundo!</h1>
+		
+		<button onclick="minhaFuncao()">Alert</button>
+		|
+		<button onclick="abreTerra()">ABRE</button>
+		|
+		<button onclick="fechaTerra()">FECHA</button>
+		
+		<script>
+			function minhaFuncao(){
+				alert("A página está carregada");
+			}
+			
+			function abreTerra(){
+				janelaTerra = window.open("https://terra.com.br","", "width=500, height=300");
+			}
+			
+			function fechaTerra(){
+				janelaTerra.close();
+			}
+		</script>
+		
+	</body>
+</html>
