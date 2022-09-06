@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>UC12-JavaScript</title>
+		<meta name="description" content="UC12- Aula 15">
+		<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+		<meta name="author" content="Prof. Jair Ferraz">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript" src="./script.js"></script>
+	</head>
+	<!--<body onload="minhaFuncao()">-->
+	<body onload="minhaFuncaoExterna()">
+		<h1>Olá mundo!</h1>
+		
+		<button onclick="minhaFuncao()">Alert...</button>
+		 | 
+		<button onclick="abreTerra()">Abre Terra</button>
+		 | 
+		<button onclick="fechaTerra()">Fecha Terra</button>
+		
+		<br/>
+		
+		Digite seu nome - onchange:
+		<input type="text" name="nome" placeholder="Nome aqui..." onchange="nomeAqui(this.value)"/>
+		
+		<br/><br/>
+		Quando formulário é enviado - onsubmit
+		<form action="" method="post" onsubmit="enviaForm()">
+			<input type="text" name="nome" placeholder="Nome aqui..." />
+			<input type="submit" value="Enviar"/>
+		</form>
+		
+		<br/><br/>
+		Digite seu nome ao perder o foco ... - onblur:
+		<input type="text" name="nome" id="nomeBlur" placeholder="Nome aqui..." onblur="nomeBlur()"/>
+		<br/><br/>		
+		Digite seu nome:
+		<input type="text" id="nomeFocus" onfocus="nomeOnFocus(this)"
+		onblur="nomeOnBlur()">
+		<p>Quando receber foco deve ter um comportamento diferente de quando perder o foco.</p>
+		<script>
+			function minhaFuncao(){
+				alert("A página esta carregada!");
+			}
+			
+			function abreTerra(){
+				janelaTerra = window.open("https://terra.com.br","","width=500, height=300");
+			}
+			
+			function fechaTerra(){
+				janelaTerra.close();
+			}
+			
+			function nomeAqui(nome){
+				if (nome==""){
+					alert("Nome precisa ser informado!");
+				}else{
+					alert("Nome informado: " + nome);
+				}
+			}
+			
+			function enviaForm(){
+				alert("Form. envaido com sucesso!");
+			}
+			
+			function nomeBlur(){
+				nome = document.getElementById("nomeBlur");
+				nome.value = nome.value.toUpperCase();
+			}
+			function nomeOnFocus(nome){
+				nome.style.background = "yellow";
+			}
+			
+		</script>
+		
+	</body>
+</html>
