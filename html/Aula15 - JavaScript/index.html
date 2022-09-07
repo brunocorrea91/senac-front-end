@@ -60,12 +60,14 @@
 		</p>
 		<p id="texto"></p>
 		<br/><br/>
-			<div onmousemove="coord()" on mouseout="limpaCoord()"
+			<div onmousemove="mostraCoord(event)" onmouseout="limpaCoord()"
 			style="width: 200px; height: 100px; border: 1px solid red;">
 			</div>
 			<p>Ao passar o mouse mostrará a coordenada no ponteiro.</p>
 			<p>Quando o mouse sair de cima da div será limpa a coord.</p>
+
 			<p id="coord"></p>
+
 
 
 		<script>
@@ -132,7 +134,16 @@
 						documento.getElementById("texto").innerHTML = "";
 					}
 				}
-			
+			function mostraCoord(e){
+				x = e.clientX;
+				y = e.clientY;
+				coordXY = "Coordenadas: (" + x + "," + y  + ")";
+				document.getElementById("coord").innerHTML = coordXY;
+				
+			}
+			function limpaCoord(){
+				document.getElementById("coord").innerHTML = "";
+			}
 		</script>
 		
 	</body>
