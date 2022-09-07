@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>UC12-JavaScript</title>
+		<title>UC12-JavaScript - Bruno Corrêa</title>
 		<meta name="description" content="UC12- Aula 15">
 		<meta name="keywords" content="HTML,CSS,XML,JavaScript">
 		<meta name="author" content="Prof. Jair Ferraz">
@@ -39,6 +39,35 @@
 		<input type="text" id="nomeFocus" onfocus="nomeOnFocus(this)"
 		onblur="nomeOnBlur()">
 		<p>Quando receber foco deve ter um comportamento diferente de quando perder o foco.</p>
+		<br/><br/>
+		Digite algo - OnKeyPress: 
+		<input type="text" id="textKeyPress" onkeypress="textKeyPress()">
+		<p>Quando uma tecla for precionada faz algo.</p>
+		
+		<br/><br/>
+		Digite algo - OnKeyUp: 
+		<input type="text" id="textKeyUp" onkeyup="textKeyUp()">
+		<p>Quando solto uma tecla faz algo.</p>
+
+		<br/><br/>
+		<p id="pOn" onclick="pOnClick()" onmouseout="pMouseOut()">
+			Muda cor do paragrado quando clicado ou quando passa o mouse.
+		</p>
+
+		<br/><br/>
+		<p ondblclick="duploClick()">
+			De um dupplo click <b>aqui</b> para ver o texto abaixo.
+		</p>
+		<p id="texto"></p>
+		<br/><br/>
+			<div onmousemove="coord()" on mouseout="limpaCoord()"
+			style="width: 200px; height: 100px; border: 1px solid red;">
+			</div>
+			<p>Ao passar o mouse mostrará a coordenada no ponteiro.</p>
+			<p>Quando o mouse sair de cima da div será limpa a coord.</p>
+			<p id="coord"></p>
+
+
 		<script>
 			function minhaFuncao(){
 				alert("A página esta carregada!");
@@ -71,6 +100,38 @@
 			function nomeOnFocus(nome){
 				nome.style.background = "yellow";
 			}
+			function nomeOnBlur(){
+				alert();
+				nomeBlur = document.getElementById("nomeFocus");
+				nomeBlur.style.background = "white";
+			}
+
+			function textKeyPress(){
+				text = document.getElementById("textKeyPress");
+				text.value = text.value.toUpperCase();
+			}
+			
+			function textKeyUp(){
+				text = document.getElementById("textKeyUp");
+				text.value = text.value.toUpperCase();
+			}
+
+			function pOnClick(){
+				document.getElementById("pOn").style.color = "darkblue";
+			}
+
+			function pMouseOut(){
+				document.getElementById("pOn").style.color = "orange";
+			}
+
+			function duploClick(){
+					if (document.getElementById("texto").innerHTML==""){
+					document.getElementById("texto").innerHTML = "Olá mundo!";
+					}
+					else{
+						documento.getElementById("texto").innerHTML = "";
+					}
+				}
 			
 		</script>
 		
