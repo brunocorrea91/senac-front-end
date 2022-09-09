@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 16 - Valida formulário JS</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <form method="post" name="formUser">
+        <fieldset> 
+             <legend>Cadastro de Usuário</legend>
+             <p>Imagem do usuário: <input id="imgUser" type="file" name="imgUser"></p>
+             <div id="imgExibir">
+                <img src="" id="idpreview">
+             </div> 
+             <p>Nome completo: <input type="text" name="nome" id="nome" maxlength="40" size="40"></p> 
+             <p>E-mail: <input type="email" name="email" id="email" maxlength="40" size="40"></p>
+             <p>Telefone: <input type="text" name="telefone" id="telefone" maxlength="40" size="40"></p>  
+             <p>Endereço: <input type="text" name="endereco" id="endereco" maxlength="40" size="40"></p>  
+              
+             <p>CPF: <input type="text" name="cpf" id="cpf" oninput="máscaraCPF(this)" maxlength="40" size="40"></p>  
+             <p>CNPJ: <input type="text" name="cnpj" id="cnpj" oninput="máscaraCNPJ(this)" maxlength="40" size="40"></p>
+
+             <p>Informe a senha: <input type="password" name="senha" id="senha">
+            </br>Confirme a senha: <input type="password" name="senhaR" id="senhaR" oninput="confirmaSenha(this)"></p>
+
+            <input type="submit" value="Enviar" onclick="return validaForm()">
+            <input type="reset" value="Limpa form.">
+
+        </fieldset>
+
+    </form>
+</body>
+</html>
