@@ -1,9 +1,52 @@
+*{
+	box-sizing : border-box;
+}
+
 body{
-    background-color: rgba(215, 235, 186, 0.89);
+	margin: auto;
+	font-family: verdana;
+	background-image: linear-gradient(lightblue,lightgreen);
 }
 header{
     text-align: center;
+    color:white;
 }
-.formulario{
-    background-color: rgb(185, 184, 184);
+
+
+.container{
+	background-color: #f2f2f2;
+	padding: 20px;
+	border-radius: 10px;
+    
+}
+
+input[type=submit]{
+	
+	background-color: #4CAF50;
+	float: right;
+	color: white;
+	border-radius: 5px; 
+	border: none;
+	cursor: pointer;
+	padding: 12px 20px;
+	margin: 5px;
+}
+input[type=submit]:hover{
+	background-color: indigo;
+}
+input[type=reset]{
+	
+	background-color: #af4c4c;
+	float: right;
+	color: white;
+	border-radius: 5px; 
+	border: none;
+	cursor: pointer;
+	padding: 12px 20px;
+	margin: 5px;
+}
+input[type=reset]:hover{
+	
+	background-color: indigo;
+	
 }

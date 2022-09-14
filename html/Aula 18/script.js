@@ -1,16 +1,38 @@
-function abrirCPF(){
-   campoPF.type = "text";
-   campoPJ.type = "hidden";
+function abrirCPF() {
+    campoPF.type = "text";
+    campoPJ.type = "hidden";
+    campoPJ.value = '';
 }
-function abrirCNPJ(){
-    campoPJ.type = "text"; 
+function abrirCNPJ() {
+    campoPJ.type = "text";
     campoPF.type = "hidden";
+    campoPF.value = '';
+
 }
-function mostrarTudo(){
-   nome = formUser.nome.value;
-   pessoa = formUser.inserirCampoPF.value;
-   alert(nome + pessoa);
+function mostrarTudo() {
+    nome = formUser.nome.value;
+    email = formUser.email.value;
+    telefoneFixo = formUser.telefoneFixo.value;
+    telefoneCelular = formUser.telefoneCelular.value;
+    endereco = formUser.endereco.value;
+    if (formUser.PF.value != "") {
+        pessoa = formUser.inserirCampoPF.value;
+    } else {
+        pessoa = formUser.inserirCampoPJ.value;
+    }
+
+
+
+
+
+
+
+
+    alert("Nome: " + nome + "\nId: " + pessoa + "\nE-mail: " + email +
+        "\nTelefone Fixo: " + telefoneFixo + "\nTelefone Celular: "
+        + telefoneCelular + "\nEndereço: " + endereco);
 }
+
 
 
 function mascaraCPF(numCPF) {

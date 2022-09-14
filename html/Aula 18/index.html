@@ -18,60 +18,64 @@
 	<header>
 		<h1> Formulário de Contato</h1>
 	</header>
+	<div class="container">
 
-	<form method="post" name="formUser" id="formUser">
-	<div class="formulario">
-		<fieldset>
-			<p>Nome Completo: <input type="text" name="nome" id="nome" maxlength="40" size="40"></p>
-			<p>Tipo de pessoa:
-				<input type="radio" id="PF" name="pessoa" value="PF" onclick="abrirCPF()" />
-				<label for="PF">PF</label>
-				<input type="radio" id="PJ" name="pessoa" value="PJ" onclick="abrirCNPJ()"/>
-				<label for="PJ">PJ</label>
-				<input type="hidden" id="campoPF" name="inserirCampoPF" placeholder="CPF" oninput="mascaraCPF(this)"/>
-				<input type="hidden" id="campoPJ" name="inserirCampoPJ" placeholder="CNPJ" oninput="mascaraCNPJ(this)"/>
-			</p>
-			<p>Sexo:
-				<input type="radio" id="masculino" name="sexo" value="masculino" />
-				<label for="masculino">Masculino</label>
-				<input type="radio" id="feminino" name="sexo" value="feminino" />
-				<label for="feminino">Feminino</label>
-			</p>
-			<p>Estado Civil: <select id="estadoCivil" name="estadoCivil"></p>
+		<form  name="formUser" id="formUser">
+
+			<fieldset>
+
+				<p>Nome Completo: <input type="text" name="nome" id="nome" maxlength="40" size="40"></p>
+				<p>Tipo de pessoa:
+					<input type="radio" id="PF" name="pessoa" value="PF" onclick="abrirCPF()" />
+					<label for="PF">PF</label>
+					<input type="radio" id="PJ" name="pessoa" value="PJ" onclick="abrirCNPJ()" />
+					<label for="PJ">PJ</label>
+					<input type="hidden" id="campoPF" name="inserirCampoPF" placeholder="CPF"
+						oninput="mascaraCPF(this)" />
+					<input type="hidden" id="campoPJ" name="inserirCampoPJ" placeholder="CNPJ"
+						oninput="mascaraCNPJ(this)" />
+				</p>
+				<p>Sexo:
+					<input type="radio" id="masculino" name="sexo" value="Masculino" />
+					<label for="masculino">Masculino</label>
+					<input type="radio" id="feminino" name="sexo" value="Feminino" />
+					<label for="feminino">Feminino</label>
+				</p>
+				<p>Estado Civil: <select id="estadoCivil" name="estadoCivil"></p>
 				<option value="">Selecione..</option>
 				<option value="solteiro">Solteiro(a)</option>
 				<option value="casado">Casado(a)</option>
 				<option value="uniaoEstavel">União Estável</option>
 				<option value="viuvo">Viúvo(a)</option>
-			</select>
+				</select>
 
-			<p>E-mail: <input type="text" name="email" id="email" maxlength="40" size="40"></p>
+				<p>E-mail: <input type="text" name="email" id="email" maxlength="40" size="40"></p>
 
-			<p>Telefone Fixo: <input type="text" name="telefoneFixo" id="telefoneFixo" oninput="mascaraTelefone(this)"
-					placeholder="DDD e somente números"></p>
+				<p>Telefone Fixo: <input type="text" name="telefoneFixo" id="telefoneFixo"
+						oninput="mascaraTelefone(this)" placeholder="DDD e somente números"></p>
 
-			<p>Telefone Celular: <input type="text" name="telefoneCelular" id="telefoneCelular"
-					oninput="mascaraTelefone(this)" placeholder="DDD e somente números"></p>
+				<p>Telefone Celular: <input type="text" name="telefoneCelular" id="telefoneCelular"
+						oninput="mascaraTelefone(this)" placeholder="DDD e somente números"></p>
 
-			<p>Endereço: <input type="text" name="endereco" id="endereco" maxlength="40" size="40"></p>
+				<p>Endereço: <input type="text" name="endereco" id="endereco" maxlength="40" size="40"></p>
 
-			<p>Cidade: <select id="cidade" name="cidade"></p>
-			<option value="">Selecione..</option>
-			<option value="POA">Porto Alegre</option>
-			<option value="GRV">Gravataí</option>
-			<option value="CAC">Cachoeirinha</option>
-			<option value="CAN">Canoas</option>
-			</select>
-			<p label for="msg">Deixe sua opinião:</label></p>
-			<textarea id="msg" name="msg" placeholder="Sua opinião aqui..."></textarea>
-			<br><br />
-			<input type="reset" value="Limpar" onclick="apagaTudo()"/>
-			<input type="submit" value="Enviar" onclick="mostrarTudo()" />
-		</fieldset>
-	</div>	
+				<p>Cidade: <select id="cidade" name="cidade"></p>
+				<option value="">Selecione..</option>
+				<option value="POA">Porto Alegre</option>
+				<option value="GRV">Gravataí</option>
+				<option value="CAC">Cachoeirinha</option>
+				<option value="CAN">Canoas</option>
+				</select>
+				<p label for="msg">Deixe sua opinião:</label></p>
+				<textarea id="msg" name="msg" placeholder="Sua opinião aqui..."></textarea>
+				<br><br />
+				<input type="reset" value="Limpar" onclick="apagaTudo()" />
+				<input type="submit" value="Enviar" onclick="mostrarTudo()" />
+			</fieldset>
+	</div>
 
 	</form>
-
+	</div>
 </body>
 
 </html>
