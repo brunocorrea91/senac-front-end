@@ -15,22 +15,52 @@ function mostrarTudo() {
     telefoneFixo = formUser.telefoneFixo.value;
     telefoneCelular = formUser.telefoneCelular.value;
     endereco = formUser.endereco.value;
-    if (formUser.PF.value != "") {
+    
+
+
+
+
+    if (formUser.pessoa.value == "PF") {
         pessoa = formUser.inserirCampoPF.value;
-    } else {
+    }else{
         pessoa = formUser.inserirCampoPJ.value;
     }
 
+    if (formUser.sexo.value == "Masculino"){
+        sexo = "Masculino"
+    }else{
+        sexo = "Feminino";
+    }
+    
+    if (formUser.cidade.value == "POA"){
+        cidade = "Porto Alegre"
+    }else if (formUser.cidade.value == "GRV"){
+        cidade = "Gravataí"
+    }else if (formUser.cidade.value == "CAC"){
+        cidade = "Cachoeirinha"
+    }else if (formUser.cidade.value == "CAN"){
+        cidade = "Canoas"
+    }else{
+        cidade = "Informar cidade. Realizar formulário novamente."
+    }
+    
+    
+    if (formUser.estadoCivil.value == "solteiro"){
+        estadoCivil = "Solteiro"
+    }else if (formUser.estadoCivil.value == "casado"){
+        estadoCivil = "Casado"
+    }else if (formUser.estadoCivil.value == "uniaoEstavel"){
+        estadoCivil = "União Estável"
+    }else if (formUser.cidade.value == "viuvo"){
+        estadoCivil = "Viúvo"
+    }else{
+        estadoCivil = "Informar estado ciivl. Realizar formulário novamente."
+    }
 
-
-
-
-
-
-
-    alert("Nome: " + nome + "\nId: " + pessoa + "\nE-mail: " + email +
-        "\nTelefone Fixo: " + telefoneFixo + "\nTelefone Celular: "
-        + telefoneCelular + "\nEndereço: " + endereco);
+       alert("Nome: " + nome + "\nN° do documento: " + pessoa + "\nSexo: " + sexo + "\nEstado Civil: "+ estadoCivil 
+            + "\nE-mail: " + email +"\nTelefone Fixo: " + telefoneFixo 
+            + "\nTelefone Celular: "+ telefoneCelular + "\nEndereço: " + endereco 
+            + "\nCidade: " + cidade);
 }
 
 
