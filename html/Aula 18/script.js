@@ -7,7 +7,6 @@ function abrirCNPJ() {
     campoPJ.type = "text";
     campoPF.type = "hidden";
     campoPF.value = '';
-
 }
 function mostrarTudo() {
     nome = formUser.nome.value;
@@ -18,20 +17,64 @@ function mostrarTudo() {
     
 
 
-
+    if (nome == "" || nome.length <= 5) {
+        alert("Informe o nome completo!");
+        formUser.nome.focus();
+        return false;
+    }
 
     if (formUser.pessoa.value == "PF") {
         pessoa = formUser.inserirCampoPF.value;
-    }else{
+    }else if (formUser.pessoa.value == "PJ"){
         pessoa = formUser.inserirCampoPJ.value;
+    }else{
+        alert("Informe o núumero de Identidade!");
+        formUser.pessoa.focus();
+        return false;
     }
+
 
     if (formUser.sexo.value == "Masculino"){
         sexo = "Masculino"
-    }else{
+    }else if (formUser.sexo.value == "Feminino"){
         sexo = "Feminino";
+    }else{
+        alert("Informe o sexo!");
+        formUser.sexo.focus();
+        return false;
+    }
+
+    if (formUser.estadoCivil.value == "solteiro"){
+        estadoCivil = "Solteiro"
+    }else if (formUser.estadoCivil.value == "casado"){
+        estadoCivil = "Casado"
+    }else if (formUser.estadoCivil.value == "uniaoEstavel"){
+        estadoCivil = "União Estável"
+    }else if (formUser.estadoCivil.value == "viuvo"){
+        estadoCivil = "Viúvo"
+    }else{
+        alert("Informe o estado civil!");
+        formUser.estadoCivil.focus();
+        return false;
     }
     
+
+    if (email == "" || !email.includes("@") || email.length <= 5) {
+        alert("Informe email corretamente!");
+        formUser.email.focus();
+        return false;
+    }
+    if (telefoneFixo == "" || telefoneFixo.length <= 5) {
+        alert("Informe o número de telefone correto!");
+        formUser.telefoneFixo.focus();
+        return false;
+    }
+    if (telefoneCelular == "" || telefoneCelular.length <= 5) {
+        alert("Informe o número de telefone correto!");
+        formUser.telefoneCelular.focus();
+        return false;
+    }
+
     if (formUser.cidade.value == "POA"){
         cidade = "Porto Alegre"
     }else if (formUser.cidade.value == "GRV"){
@@ -41,20 +84,17 @@ function mostrarTudo() {
     }else if (formUser.cidade.value == "CAN"){
         cidade = "Canoas"
     }else{
-        cidade = "Informar cidade. Realizar formulário novamente."
+        alert("Informe a cidade!");
+        formUser.cidade.focus();
+        return false;
     }
     
-    
-    if (formUser.estadoCivil.value == "solteiro"){
-        estadoCivil = "Solteiro"
-    }else if (formUser.estadoCivil.value == "casado"){
-        estadoCivil = "Casado"
-    }else if (formUser.estadoCivil.value == "uniaoEstavel"){
-        estadoCivil = "União Estável"
-    }else if (formUser.cidade.value == "viuvo"){
-        estadoCivil = "Viúvo"
+    if(formUser.endereco.value==""){
+        alert("Informe o endereço!");
+        formUser.cidade.focus();
+        return false;
     }else{
-        estadoCivil = "Informar estado ciivl. Realizar formulário novamente."
+        endereco = formUser.endereco.value;
     }
 
        alert("Nome: " + nome + "\nN° do documento: " + pessoa + "\nSexo: " + sexo + "\nEstado Civil: "+ estadoCivil 
