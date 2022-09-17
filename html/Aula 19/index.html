@@ -7,6 +7,7 @@
     <meta name="keywords" content="html, css, js, mario">
     <meta name="description" content="Projeto web para prática do html, css e js elaborando o jogo Mario">
     <meta name="author" content = "Bruno de Vasconcelos Corrêa">
+    <link rel="shortcut icon" href="./imagens/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="estilo.css">
     <script src="script.js" defer></script>
 
@@ -14,7 +15,10 @@
 </head>
 <body>
     <div class="game-board">
+        <img src="./imagens/clouds.png" alt = "Nuvens passageiras" class = "clouds">
         <img src="./imagens/mario.gif" alt="Mario" class="mario">
+        <img src="./imagens/pipe.png" alt="Cano verde" class="pipe">
+        <button id="recomecar" class="recomecar" onclick="window.location.reload();" hidden>Recomeçar?</button>
     </div>
     <footer>
         <p>Créditos: </p>

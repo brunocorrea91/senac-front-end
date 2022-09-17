@@ -22,14 +22,79 @@
     animation: jump 500ms ease-out;
 }
 
-@keyframes jump{
+@keyframes jump {
     0%{
         bottom: 0;
     }
+    40%{
+        bottom: 180px;
+    }
     50%{
+        bottom: 180px;
+    }
+    60%{
         bottom: 180px;
     }
     100%{
         bottom: 0;
     }
+}
+.pipe{
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    animation: pipe-animation 1.5s infinite linear;
+    
+}
+.clouds{
+    width: 550px;
+    position: absolute;
+    animation: clouds-animation 10s infinite linear;
+}
+
+@keyframes clouds-animation{
+    from{
+        right: -550px;
+    }
+    to{
+        right: 150%;
+    }
+}
+    
+
+@keyframes pipe-animation {
+    from{
+        right: -80px;
+    }
+    to{
+        right: 110%;
+    }
+}
+
+.recomecar{
+    width: 180px;
+    padding: 10px;
+    background-color: red;
+    font-size: x-large;
+    color: white;
+    border: 0; 
+    border-radius: 20px;
+    margin: 0;
+    position:absolute;
+    top: 60%;
+    left: 50%;
+    /* tranform centraliza no centro do elemento */
+    cursor: pointer;
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.recomecar:hover{
+    background-color: greenyellow;
+    color: black;
+}
+
+footer{
+	padding: 20px;
+	font-size: x-large;
+	text-align: center;
 }
