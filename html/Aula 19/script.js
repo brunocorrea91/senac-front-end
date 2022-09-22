@@ -1,6 +1,9 @@
 const mario = document.querySelector(".mario");
 const pipe = document.querySelector(".pipe");
 const clouds = document.querySelector(".clouds");
+let score = 0;
+let pipePositionScore = pipe.offsetLeft;
+
 
 const jump = () =>{
     mario.classList.add("jump");
@@ -30,7 +33,21 @@ const loop = setInterval(() => {
 
         recomecar.removeAttribute("hidden");
         clearInterval(loop);
-    }   
+
+    }  else if (pipePosition>pipePositionScore){
+            score += 100;
+            document.getElementById("score").innerHTML = score;
+         
+            
+            
+            if(score>=200){
+                //pipe.style.animation = "pipe-animation 1.5s infinite linear";  
+                pipe.style.animationDuration = "1s";  
+            }
+            
+                    
+    }
+    pipePositionScore = pipePosition;
 },10);
 
 

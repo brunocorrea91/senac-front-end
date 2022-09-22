@@ -43,7 +43,7 @@
     position: absolute;
     bottom: 0;
     width: 80px;
-    animation: pipe-animation 1.5s infinite linear;
+    animation: pipe-animation 2.5s infinite linear;
     
 }
 .clouds{
@@ -71,6 +71,13 @@
     }
 }
 
+@media only screen and (max-width: 300px) {
+    .pipe{
+        animation: pipe-animation 1.5s infinite linear;
+    }
+
+  }
+
 .recomecar{
     width: 180px;
     padding: 10px;
@@ -92,7 +99,9 @@
     background-color: greenyellow;
     color: black;
 }
-
+h3{
+    padding: 10px;
+}
 footer{
 	padding: 20px;
 	font-size: x-large;
