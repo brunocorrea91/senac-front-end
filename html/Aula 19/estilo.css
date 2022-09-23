@@ -19,7 +19,7 @@
     bottom: 0px;
 }
 .jump{
-    animation: jump 500ms ease-out;
+    animation: jump 600ms ease-out;
 }
 
 @keyframes jump {
@@ -43,15 +43,21 @@
     position: absolute;
     bottom: 0;
     width: 80px;
-    animation: pipe-animation 2.5s infinite linear;
+    right: -80px;
     
 }
 .clouds{
+    right: -550px;
     width: 550px;
     position: absolute;
+    
+}
+.clouds-animation{
     animation: clouds-animation 10s infinite linear;
 }
-
+.pipe-animation{
+    animation: pipe-animation 2.5s infinite linear;
+}
 @keyframes clouds-animation{
     from{
         right: -550px;
@@ -71,9 +77,9 @@
     }
 }
 
-@media only screen and (max-width: 300px) {
-    .pipe{
-        animation: pipe-animation 1.5s infinite linear;
+@media only screen and (min-width: 1025px) {
+    .pipe-animation{
+        animation: pipe-animation 3.5s infinite linear;
     }
 
   }
@@ -99,8 +105,11 @@
     background-color: greenyellow;
     color: black;
 }
+
 h3{
     padding: 10px;
+    text-align: center;
+        
 }
 footer{
 	padding: 20px;
