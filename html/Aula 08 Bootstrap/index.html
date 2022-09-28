@@ -11,7 +11,7 @@
 	<link rel="icon" type="image/icon" href="./imagens/favicon.png" />
 	<!-- Estilo da página -->
 	<!-- <link rel="stylesheet" href="estilo.css"/> -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+	<link href="./assets/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
 
@@ -41,11 +41,27 @@
 			</div>
 
 			<div class="col-lg-5 text-center bg-warning p-5">
-				<figure>
-					<img class="img-thumbnail" src="./imagens/caminho.jpg" alt="Caminho entre árvores" title="Caminho"
-						width="300px"/>
-					<figcaption>Caminho</figcaption>
-				</figure>
+				<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-inner">
+					  <div class="carousel-item active">
+						<img src="./imagens/imgPequena.jpg" class="d-block w-100" alt="...">
+					  </div>
+					  <div class="carousel-item">
+						<img src="./imagens/imgMedia.jpg" class="d-block w-100" alt="...">
+					  </div>
+					  <div class="carousel-item">
+						<img src="./imagens/caminho.jpg" class="d-block w-100" alt="...">
+					  </div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+					  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					  <span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+					  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					  <span class="visually-hidden">Next</span>
+					</button>
+				  </div>
 			</div>
 			<div class="col-lg-5 bg-primary text-white p-2">
 				<h2>Texto de marcação</h2>
@@ -84,7 +100,7 @@
 		</div>
 	</div>
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+	<script src="./assets/js/bootstrap.bundle.min.js"
 		integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
 		crossorigin="anonymous"></script>
 </body>
